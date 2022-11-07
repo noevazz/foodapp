@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food app</title>
+    <link rel="stylesheet" href="./resources/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script src="./resources/scripts/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <button class="cornerIcon" id="hamburger">
+        <span class="material-symbols-outlined"> menu </span>
+      </button>
+      <button class="cornerIcon" id="cartTop">
+        <span class="material-symbols-outlined">shopping_bag</span>
+      </button>
+      <div id="dishContainer">
+        <img id="imageSalad" src="./resources/media/salad.png" alt="salad" />
+      </div>
+    </header>
+
+    <section id="title">
+      <button id="prev">&lt;</button>
+      <h1>Tomato Pea salad</h1>
+      <button id="next">&gt;</button>
+    </section>
+
+    <main>
+      <section id="starsAndReviews">
+        <span id="stars"></span>
+        <span id="reviews"></span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt
+          harum ut perspiciatis maiores atque architecto minus repellendus est!.
+        </p>
+      </section>
+
+      <section id="priceAndInfo">
+        <span id="price">$7.89</span>
+        <ul class="food-info">
+          <li>450 cal</li>
+          <li>3 sugar</li>
+          <li>250 mac</li>
+        </ul>
+      </section>
+
+      <section id="cartContainer">
+        <button id="addToCart">
+          <span class="material-symbols-outlined">shopping_bag</span>
+          <span>Add to cart</span>
+        </button>
+
+        <div id="amountControls">
+          <button title="remove item" id="removeItem">-</button>
+          <span id="amount">1</span>
+          <button title="add item" id="addItem">+</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
