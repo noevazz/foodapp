@@ -36,7 +36,9 @@ function updateDish() {
         console.log(data.meals[0].strMealThumb);
         console.log(data.meals[0].strMeal);
         document.getElementById('imageSalad').src = data.meals[0].strMealThumb;
+        document.getElementById('strInstructions').innerHTML = data.meals[0].strInstructions;
         document.querySelector('#title h1').innerHTML = data.meals[0].strMeal;
+        
     });
 }
 prevElement.addEventListener('click', ()=>{
